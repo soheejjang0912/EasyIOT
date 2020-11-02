@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EASY IOT</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    
+    <body> 
+        <div class="container">
+            <div class="header">
+                <H2>EASY IOT</H2>
+            </div> 
+            <div id='main'>
+                <h2>LIGHT STATE</h2>
+                {% for pin in pins %}
+                <p>{{pins[pin].name}}  
+                    {% if pins[pin].state == True %}
+                        <a href="/lightState.html/{{pin}}/off"><button id ='btn1'>끄기</button></a>
+                    {% else %}
+                        <a href="/lightState.html/{{pin}}/on"><button id ='btn2'>켜기</button></a> 
+                    {% endif %}
+                </p>
+                {% endfor %}
+            </div> 
+            <div class="footer"> 
+                <div>
+                    <a href="/">
+                        <p><img src="{{url_for('static', filename='icon/home.png') }}"></p>
+                        <p><span>메인화면으로 </span></p>
+                    </a>
+                </div>
+                made by soheejjang0912@gmail.com
+            </div>
+        </div>  
+    </body>
+</html>
+

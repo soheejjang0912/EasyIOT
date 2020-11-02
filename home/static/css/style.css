@@ -1,0 +1,46 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+}
+
+.main div{
+    flex:1;
+}
+
+.main div button {
+    background-color: rgb(231, 222, 222);
+    color: rgb(39, 15, 15);
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: black;
+    border: none;
+    color: rgb(39, 15, 15);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size:30px;
+    padding:100px 100px;
+}
+
+.parent{
+    width: 90%;
+    margin: 10px auto;
+}
+ 

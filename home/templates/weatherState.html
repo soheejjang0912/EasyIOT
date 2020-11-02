@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EASY IOT</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <H2>EASY IOT</H2>
+            </div>
+            
+            <div id='main'> 
+                <h2>WEATHER STATE</h2>  
+                <p>오늘의 가산동 날씨입니다.</p>    
+                <p>{{data[0]}}도 입니다</p> 
+                <p>{{data[1]}}</p>  
+            </div>
+
+            <div class="footer"> 
+                <div>
+                    <a href="/">
+                        <p><img src="{{url_for('static', filename='icon/home.png') }}"></p>
+                        <p><span>메인화면으로 </span></p>
+                    </a>
+                </div>
+                made by soheejjang0912@gmail.com
+            </div>
+        </div>  
+    </body>
+</html>
+

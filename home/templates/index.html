@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EASY IOT</title> 
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+    </head> 
+
+    <body>  
+        <div class="container">
+            <div class="header">
+                <H2>EASY IOT</H2>
+            </div> 
+            <div class="main">
+                <div>
+                    <a href="lightState.html">
+                        <p><img src="{{url_for('static', filename='icon/lightbulb.png') }}"></p>
+                        <p><span>LIGHT STATE</span></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="doorState.html">
+                        <p><img src="{{url_for('static', filename='icon/key.png') }}"></p>
+                        <p><span>DOOR STATE</span></p>
+                    </a>
+                </div> 
+                <div>
+                    <a href="weatherState.html">
+                    <p><img src="{{url_for('static', filename='icon/weather.png') }}"></p>
+                    <p><span>WEATHER STATE</span></p>
+                    </a>
+                </div>
+            </div>  
+            <div class="footer"> 
+                made by soheejjang0912@gmail.com
+            </div> 
+        </div> 
+    </body>
+</html>
+
